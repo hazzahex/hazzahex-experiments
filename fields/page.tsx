@@ -25,7 +25,9 @@ export default function Fields() {
 
   function getWavey(v: number, time: number) {
     // Add time-based movement to the wave
-    return Math.sin((fullCircle * v * 0.8) / lineNumber + time) * waveAmplitude;
+    return (
+      Math.sin((fullCircle * v * 0.8) / lineNumber + time) * waveAmplitude
+    );
   }
 
   useEffect(() => {
