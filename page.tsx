@@ -7,6 +7,11 @@ import Icon from "@/components/Icon";
 export default function Experiments() {
   const experiments = [
     {
+      name: "Name",
+      slug: "name",
+      created: "17th Jan 2025",
+    },
+    {
       name: "Fields",
       slug: "fields",
       created: "15th Jan 2025",
