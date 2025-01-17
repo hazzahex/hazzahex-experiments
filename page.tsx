@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import { ThoughtLink } from "@/components/Thought";
+import Icon from "@/components/Icon";
 
 export default function Experiments() {
   const experiments = [
@@ -69,6 +70,27 @@ export default function Experiments() {
             </ThoughtLink>
           </li>
         ))}
+        <li>
+          <a
+            href="https://github.com/hazzahex/hazzahex-experiments"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-colors"
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "12px",
+                alignItems: "center",
+                marginTop: "24px",
+              }}
+            >
+              <Icon name="github" />
+              code for these experiments
+            </div>
+          </a>
+        </li>
       </ul>
     </Layout>
   );
